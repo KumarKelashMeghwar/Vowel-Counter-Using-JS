@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+   <link rel="stylesheet" href="style.css">
+   <title>Vowel Counter</title>
+   
+
+</head>
+<body> 
+ 
+   <div class="container">
+      
+
+      <div class="Vowel">
+         <h3>Vowels: <span id="vs">0</span></h3>
+     </div>
+      <div class="textArea">
+         <textarea  name="textArea" id="textArea" cols="30" rows="10"  onchange="myFun()"></textarea>
+      </div>
+   
+   </div>
+
+  
+   <a id="name" href="https://github.com/KumarKelashMeghwar" target="_blank">Made By Kumar Kelash</a>
+
+
+
+  <script>
+
+     var text = document.querySelector("textarea");
+
+     var score = document.querySelector("#vs");
+    
+
+
+     function myFun(){
+        
+        var textArea = text.value;
+        var vowel = 0, consonant=0, words=0;
+  
+        var arr = textArea.split("");
+        
+        for(item of arr){
+             switch(item){
+         
+                  case 'a':
+                      vowel++;
+                      break;
+                 
+                  case 'A':
+                      vowel++;
+                      break;
+
+                  case 'e':
+                      vowel++;
+                      break;
+
+                  case 'E':
+                      vowel++;
+                      break;
+
+
+                 case 'I':
+                      vowel++;
+                      break;
+
+
+                 case 'i':
+                      vowel++;
+                      break;
+
+                 case 'o':
+                      vowel++;
+                      break;
+
+                 case 'O':
+                      vowel++;
+                      break;
+ 
+
+                case 'u':
+                      vowel++;
+                      break;
+
+
+                case 'U':
+                      vowel++;
+                      break;
+
+                case ' ':
+                      break;
+
+
+                default:
+                     consonant++;
+                     break;
+
+            }
+         }
+
+         score.innerHTML = vowel;
+        
+      }
+
+
+ </script>
+
+</body>
+</html>
