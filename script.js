@@ -1,9 +1,9 @@
 const vowels = document.querySelector("#vowels");
-const textArea = document.querySelector(".textArea textarea");
+const textArea = document.querySelector("textarea");
 
 let vowel = 0;
 
-let keypressFun = event => {
+let keypressFun = (event) => {
 
     let key = event.key;
 
